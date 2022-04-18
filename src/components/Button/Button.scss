@@ -2,8 +2,7 @@
     justify-self: center;
     border-radius: 5px;
     border-width: 0px;
-    width: 40px;
-    height: 40px;  
+    padding: 20px;
     font-weight: bold;
     background-repeat: no-repeat;
     background-position: center;
@@ -12,22 +11,25 @@
 
     &--orange{
       color: #FFE3BB;
-      background-color:#EC823E;
+      background-color: #EC823E;
     }
-        
+     
+  &__icon{
     &--plus{
       background-image: url('../../images/icon-plus.svg');
-
     }
   
     &--minus {
       background-image: url('../../images/icon-minus.svg');
-
     }
   
     &--add { 
-      width: 170px;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 8px;
+      padding-bottom: 15px;
       background-position: left;
       background-image: url("../../images/icon-cart.svg");      
     }
   }
+}
