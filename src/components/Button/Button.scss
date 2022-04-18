@@ -1,0 +1,37 @@
+.button {
+    justify-self: center;
+    border-radius: 5px;
+    border-width: 0px;
+    background-color: white;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    background-position: center;
+      
+  
+    &--plus{
+      width: 40px;
+      height: 40px;        
+      color: #EC823E;
+      background-color: #F7F8FD;
+      background-image: url('../../images/icon-plus.svg');
+
+    }
+  
+    &--minus {
+      width: 40px;
+      height: 40px;  
+      color: #EC823E;
+      background-color: #F7F8FD;
+      background-image: url('../../images/icon-minus.svg');
+
+    }
+  
+    &--add { 
+      color: #FFE3BB;
+      background-color:#EC823E;
+      width: 170px;
+      height: 40px;
+      background-position: left;
+      background-image: url("../../images/icon-cart.svg");
+    }
+  }
