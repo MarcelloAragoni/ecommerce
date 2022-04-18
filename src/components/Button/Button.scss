@@ -8,6 +8,7 @@
   background-position: center;
   color: #EC823E;
   background-color: #F7F8FD;
+  height: 35px;
 
   &--orange{
     color: #FFE3BB;
@@ -25,6 +26,7 @@
     }
   
     &--add { 
+      line-height: 15px;
       padding-left: 60px;
       padding-right: 35px;
       padding-top: 8px;
