@@ -1,16 +1,18 @@
 .button {
-  justify-self: center;
+  padding: 20px;
   border-radius: 5px;
   border-width: 0px;
-  padding: 20px;
   font-weight: bold;
   background-repeat: no-repeat;
   background-position: center;
   color: #EC823E;
   background-color: #F7F8FD;
-  height: 35px;
 
   &--orange{
+    height: 40px;
+    padding: 0;
+    padding-left: 30px;
+    padding-right: 35px;
     color: #FFE3BB;
     background-color: #EC823E;
   }
@@ -26,13 +28,9 @@
     }
   
     &--add { 
-      line-height: 15px;
-      padding-left: 60px;
-      padding-right: 35px;
-      padding-top: 8px;
-      padding-bottom: 15px;
+      padding-left: calc(30px + 30px);
       background-position-x: 30px;
-      background-position-y: 5px;
+      background-position-y: center;
       background-image: url("../../images/icon-cart.svg");      
     }
   }
