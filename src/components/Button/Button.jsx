@@ -2,16 +2,17 @@ import cn from "classnames";
 
 import "./Button.scss";
 
-export default function Button({text, prop}) {
-  const buttonType = cn(
+export default function Button({text, icon, color}) {
+  const buttonStyle = cn(
     "button",
-    {"button--plus": prop === "plus"},
-    {"button--minus": prop === "minus"},
-    {"button--add": prop === "add"}
+    {"button--plus": icon === "plus"},
+    {"button--minus": icon === "minus"},
+    {"button--add": icon === "add"},
+    {"button--orange": color === "orange"}
   );
 
   return (
-    <button type="button" className={buttonType}>
+    <button type="button" className={buttonStyle}>
       {text}
     </button>
   );
