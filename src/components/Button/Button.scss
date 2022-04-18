@@ -1,20 +1,21 @@
 .button {
-    justify-self: center;
-    border-radius: 5px;
-    border-width: 0px;
-    padding: 20px;
-    font-weight: bold;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: #EC823E;
-    background-color: #F7F8FD;
+  justify-self: center;
+  border-radius: 5px;
+  border-width: 0px;
+  padding: 20px;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #EC823E;
+  background-color: #F7F8FD;
 
-    &--orange{
-      color: #FFE3BB;
-      background-color: #EC823E;
-    }
+  &--orange{
+    color: #FFE3BB;
+    background-color: #EC823E;
+  }
      
   &__icon{
+  
     &--plus{
       background-image: url('../../images/icon-plus.svg');
     }
