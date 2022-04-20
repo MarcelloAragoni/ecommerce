@@ -1,0 +1,13 @@
+input {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border-radius: 0px;
+  border-color: #DEDFE1;
+  border-style: solid;
+  text-align: center;
+
+  &:focus-visible {
+    outline: none;
+  }
+}
