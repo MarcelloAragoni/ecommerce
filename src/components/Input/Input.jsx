@@ -5,11 +5,11 @@ export default function Input({
   name,
   value,
   placeholder,
-  textPosition,
+  textAlign,
   type = "text",
 }) {
   const textStyle = cn("input", {
-    "input__text--center": textPosition === "center",
+    "input__text--center": textAlign === "center",
   });
 
   return (

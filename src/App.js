@@ -6,12 +6,7 @@ function App() {
   return (
     <>
       <ProductPage />
-      <Input
-        name="quantity"
-        id="quantity"
-        placeholder="0"
-        textPosition="center"
-      />
+      <Input name="quantity" id="quantity" placeholder="0" textAlign="center" />
     </>
   );
 }
