@@ -1,12 +1,10 @@
 import "./App.css";
-import Input from "./components/Input/Input";
-import ProductPage from "./pages/ProductPage";
+import Quantity from "./components/Quantity/Quantity";
 
 function App() {
   return (
     <>
-      <ProductPage />
-      <Input name="quantity" id="quantity" placeholder="0" textAlign="center" />
+      <Quantity />
     </>
   );
 }

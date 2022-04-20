@@ -1,0 +1,15 @@
+.quantity{
+  display: flex;
+  flex-direction: row;
+  width: 120px;
+
+  .button__icon--minus{
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .button__icon--plus{
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+}
