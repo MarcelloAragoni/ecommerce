@@ -2,6 +2,7 @@ import cn from "classnames";
 import "./Input.scss";
 
 export default function Input({
+  setInputState,
   name,
   value,
   placeholder,
@@ -12,8 +13,13 @@ export default function Input({
     "input__text--center": textAlign === "center",
   });
 
+  function handleChange(event) {
+    setInputState(event.target.value);
+  }
+
   return (
     <input
+      onChange={handleChange}
       className={textStyle}
       name={name}
       id={name}

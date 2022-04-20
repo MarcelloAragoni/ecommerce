@@ -2,7 +2,7 @@ import cn from "classnames";
 
 import "./Button.scss";
 
-export default function Button({ text, icon, color }) {
+export default function Button({ text, icon, color, onClick }) {
   const buttonStyle = cn(
     "button",
     { "button__icon--plus": icon === "plus" },
@@ -12,7 +12,7 @@ export default function Button({ text, icon, color }) {
   );
 
   return (
-    <button type="button" className={buttonStyle}>
+    <button onClick={onClick} type="button" className={buttonStyle}>
       {text}
     </button>
   );
