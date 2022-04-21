@@ -9,15 +9,15 @@ export default function ProdDetail({
   discount,
 }) {
   return (
-    <div className="prodDetail">
-      <h2>{company}</h2>
-      <h1>{model}</h1>
-      <p className="description">{description}</p>
-      <p className="price">
+    <div className="product-detail">
+      <p className="product-detail__subtitle">{company}</p>
+      <p className="product-detail__title">{model}</p>
+      <p className="product-detail__description">{description}</p>
+      <p className="product-detail__price">
         {price}
         <span>{discount}</span>
       </p>
-      <p className="originalPrice">{originalPrice}</p>
+      <p className="product-detail__original-price">{originalPrice}</p>
     </div>
   );
 }

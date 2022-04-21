@@ -1,27 +1,25 @@
-.prodDetail{
+.product-detail{
   font-weight: bold;
 
-  h1{
+  &__title{
     font-size: 24px;
   }
   
-  h2{
+  &__subtitle{
     color: orange;
     font-size: 12px;
   }
 
-  .description{
+  &__description{
     font-weight: 200;
   }
 
-  .price{
-    span{
-      color: orange;
-      margin-left: 10px;
-    }
+  &__price span{
+    color: orange;
+    margin-left: 10px;
   }
 
-  .originalPrice{
+  &__original-price{
     color: #d1d1d1;
     text-decoration: line-through;
   }
