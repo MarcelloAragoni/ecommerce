@@ -1,10 +1,10 @@
 import "./App.css";
-import Quantity from "./components/Quantity/Quantity";
+import ProdSelector from "./pages/ProductPage/ProdSelector/ProdSelector";
 
 function App() {
   return (
     <>
-      <Quantity />
+      <ProdSelector />
     </>
   );
 }
