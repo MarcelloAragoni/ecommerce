@@ -1,0 +1,28 @@
+.prodDetail{
+  font-weight: bold;
+
+  h1{
+    font-size: 24px;
+  }
+  
+  h2{
+    color: orange;
+    font-size: 12px;
+  }
+
+  .description{
+    font-weight: 200;
+  }
+
+  .price{
+    span{
+      color: orange;
+      margin-left: 10px;
+    }
+  }
+
+  .originalPrice{
+    color: #d1d1d1;
+    text-decoration: line-through;
+  }
+}
