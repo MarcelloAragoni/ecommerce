@@ -1,0 +1,14 @@
+.product-page{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 700px;
+
+  .product-info{
+    width: 50%;
+  }  
+
+  .product-selector{
+    margin-top: 30px;
+  }
+}
