@@ -1,12 +1,9 @@
 import "./App.css";
-import ProdSelector from "./pages/ProductPage/ProdSelector/ProdSelector";
+import ProductPage from "./pages/ProductPage";
+import "./reset.css";
 
 function App() {
-  return (
-    <>
-      <ProdSelector />
-    </>
-  );
+  return <ProductPage />;
 }
 
 export default App;

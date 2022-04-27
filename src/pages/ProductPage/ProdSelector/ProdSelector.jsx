@@ -5,7 +5,7 @@ import "./ProdSelector.scss";
 
 export default function ProdSelector() {
   return (
-    <div className="Product-selector">
+    <div className="product-selector">
       <Quantity />
       <Button color="orange" icon="add" text="Add to Cart" />
     </div>
