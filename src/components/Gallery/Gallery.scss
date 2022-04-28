@@ -9,13 +9,8 @@
     width: 100%;
     grid-column-gap: 10px;
 
-    li{
-      &:first-child img{
-        margin-left: 0;
-      }    
-      img{
-        width: 100%!important;
-      }
+    li img{
+      width: 100%!important;  
     }
   }
 
