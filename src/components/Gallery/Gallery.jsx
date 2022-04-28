@@ -19,6 +19,10 @@ export default function Gallery() {
     setCurrent(current === length - 1 ? 0 : current + 1);
   }
 
+  function handleChangeCurrent(index) {
+    setCurrent(index);
+  }
+
   useEffect(() => {
     fetch("/sliderdata.json")
       .then((response) => response.json())
@@ -36,12 +40,17 @@ export default function Gallery() {
             className={index === current ? "slideActive" : "slide"}
             key={index}
           >
-            {index === current && (
-              <Images key={slider.id} source={slider.image} />
-            )}
+            {index === current && <Images source={slider.image} />}
           </div>
         );
       })}
+      <ul className="gallery-thumbnail">
+        {sliderData.map((slider, index) => (
+          <li onClick={() => handleChangeCurrent(index)} key={index}>
+            <Images source={slider.thumbnail} />
+          </li>
+        ))}
+      </ul>
       <Button onClick={handleButtonRightClick} icon="next" />
     </div>
   );
