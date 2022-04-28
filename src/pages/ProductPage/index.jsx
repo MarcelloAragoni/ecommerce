@@ -9,7 +9,7 @@ export default function ProductPage() {
   const [products, setProduct] = useState([]);
 
   useEffect(() => {
-    fetch("./data.json")
+    fetch("/data.json")
       .then((response) => response.json())
       .then((data) => {
         setProduct(data.products);

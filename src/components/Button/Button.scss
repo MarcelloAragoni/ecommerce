@@ -19,18 +19,26 @@
      
   &__icon{
     &--plus{
-      background-image: url('../../images/icon-plus.svg');
+      background-image: url('../../../public/images/icon-plus.svg');
     }
   
     &--minus {
-      background-image: url('../../images/icon-minus.svg');
+      background-image: url('../../../public/images/icon-minus.svg');
     }
   
     &--add { 
       padding-left: calc(30px + 30px);
       background-position-x: 30px;
       background-position-y: center;
-      background-image: url("../../images/icon-cart.svg");      
+      background-image: url("../../../public/images/icon-cart.svg");      
+    }
+
+    &--previous{
+      background-image: url('../../../public/images/icon-previous.svg');
+    }
+
+    &--next{
+      background-image: url('../../../public/images/icon-next.svg');
     }
   }
 }
