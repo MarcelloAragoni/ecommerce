@@ -7,6 +7,8 @@ import "./Gallery.scss";
 export default function Gallery() {
   const [current, setCurrent] = useState(0);
 
+  const [overlay, setOverlay] = useState("overlayOff");
+
   const [sliderData, setSliderData] = useState([]);
 
   const length = Object.keys(sliderData).length;
@@ -23,6 +25,12 @@ export default function Gallery() {
     setCurrent(index);
   }
 
+  function handleChangeOverlay() {
+    setOverlay(overlay === "overlayOff" ? "overlayOn" : "overlayOff");
+  }
+
+  console.log(overlay);
+
   useEffect(() => {
     fetch("/sliderdata.json")
       .then((response) => response.json())
@@ -32,26 +40,56 @@ export default function Gallery() {
   }, []);
 
   return (
-    <div className="gallery">
-      <Button onClick={handleButtonLeftClick} icon="previous" />
-      {sliderData.map((slider, index) => {
-        return (
-          <div
-            className={index === current ? "slideActive" : "slide"}
-            key={index}
-          >
-            {index === current && <Images source={slider.image} />}
-          </div>
-        );
-      })}
-      <ul className="gallery-thumbnail">
-        {sliderData.map((slider, index) => (
-          <li onClick={() => handleChangeCurrent(index)} key={index}>
-            <Images source={slider.thumbnail} />
-          </li>
-        ))}
-      </ul>
-      <Button onClick={handleButtonRightClick} icon="next" />
-    </div>
+    <>
+      <div className="gallery">
+        <Button onClick={handleButtonLeftClick} icon="previous" />
+        {sliderData.map((slider, index) => {
+          return (
+            <div
+              className={index === current ? "slideActive" : "slide"}
+              key={index}
+            >
+              {index === current && (
+                <Images onClick={handleChangeOverlay} source={slider.image} />
+              )}
+            </div>
+          );
+        })}
+        <ul className="gallery-thumbnail">
+          {sliderData.map((slider, index) => (
+            <li onClick={() => handleChangeCurrent(index)} key={index}>
+              <Images source={slider.thumbnail} />
+            </li>
+          ))}
+        </ul>
+        <Button onClick={handleButtonRightClick} icon="next" />
+      </div>
+
+      <div id={overlay}>
+        <div className="gallery">
+          <Button onClick={handleButtonLeftClick} icon="previous" />
+          {sliderData.map((slider, index) => {
+            return (
+              <div
+                className={index === current ? "slideActive" : "slide"}
+                key={index}
+              >
+                {index === current && (
+                  <Images onClick={handleChangeOverlay} source={slider.image} />
+                )}
+              </div>
+            );
+          })}
+          <ul className="gallery-thumbnail">
+            {sliderData.map((slider, index) => (
+              <li onClick={() => handleChangeCurrent(index)} key={index}>
+                <Images source={slider.thumbnail} />
+              </li>
+            ))}
+          </ul>
+          <Button onClick={handleButtonRightClick} icon="next" />
+        </div>
+      </div>
+    </>
   );
 }
