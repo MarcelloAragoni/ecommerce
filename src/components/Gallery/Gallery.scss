@@ -1,4 +1,4 @@
-#overlayOff{
+#overlayOff {
   display: none;
 }
 
@@ -12,33 +12,30 @@
 	text-align: center;
   z-index: 999;
 
-  & img{
+  & .__image {
     margin-top: 5%;
     width: 500px;
   }
 
-  & .gallery-thumbnail{
+  & .gallery-thumbnail {
     width: 400px;
   }
 }
 
-.gallery{
+.gallery {
   margin: 0 auto;
   text-align: -webkit-center;
   position: relative;
 
-  .gallery-thumbnail{
+  .gallery-thumbnail {
     margin-top: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 100%;
     grid-column-gap: 10px;
 
-    li img{
+    &__item img {
       width: 100%!important;  
     }
   }
-
 }
-
-

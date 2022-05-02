@@ -57,7 +57,11 @@ export default function Gallery() {
         })}
         <ul className="gallery-thumbnail">
           {sliderData.map((slider, index) => (
-            <li onClick={() => handleChangeCurrent(index)} key={index}>
+            <li
+              className="gallery-thumbnail__item"
+              onClick={() => handleChangeCurrent(index)}
+              key={index}
+            >
               <Images source={slider.thumbnail} />
             </li>
           ))}
@@ -82,7 +86,11 @@ export default function Gallery() {
           })}
           <ul className="gallery-thumbnail">
             {sliderData.map((slider, index) => (
-              <li onClick={() => handleChangeCurrent(index)} key={index}>
+              <li
+                className="gallery-thumbnail__item"
+                onClick={() => handleChangeCurrent(index)}
+                key={index}
+              >
                 <Images source={slider.thumbnail} />
               </li>
             ))}

@@ -1,9 +1,9 @@
-export default function Images({ source, onClick, className }) {
+export default function Images({ source, onClick }) {
   const IMAGE_PATH = "/images/";
 
   return (
     <img
-      className={className}
+      className="__image"
       onClick={onClick}
       src={IMAGE_PATH + source}
       alt=""
