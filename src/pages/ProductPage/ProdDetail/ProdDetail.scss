@@ -1,28 +1,29 @@
-.product-detail{
+.product-detail {
   font-weight: bold;
+  margin-top: 60px;
 
-  &__title{
+  &__title {
     font-size: 35px;
     margin-top: 12px;
   }
   
-  &__subtitle{
+  &__subtitle {
     color: orange;
     font-size: 12px;
     margin-top: 15px;
     margin-bottom: 30px;
   }
 
-  &__description{
+  &__description {
     font-weight: 200;
     margin-top: 16px;
   }
 
-  &__price{
+  &__price {
     font-size: 25px;
     margin-top: 30px;
   
-    & span{
+    span {
       color: orange;
       margin-left: 10px;
       font-size: 15px;
@@ -31,7 +32,8 @@
       padding: 3px;
     }
   } 
-  &__original-price{
+  
+  &__original-price {
     margin-top: 5px;
     color: #d1d1d1;
     text-decoration: line-through;

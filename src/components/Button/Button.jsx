@@ -8,6 +8,8 @@ export default function Button({ text, icon, color, onClick }) {
     { "button__icon--plus": icon === "plus" },
     { "button__icon--minus": icon === "minus" },
     { "button__icon--add": icon === "add" },
+    { "button__icon--next": icon === "next" },
+    { "button__icon--previous": icon === "previous" },
     { "button--orange": color === "orange" }
   );
 
