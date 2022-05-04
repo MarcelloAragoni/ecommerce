@@ -6,9 +6,7 @@ import "./Gallery.scss";
 
 export default function Gallery() {
   const [current, setCurrent] = useState(0);
-
   const [overlay, setOverlay] = useState("overlayOff");
-
   const [sliderData, setSliderData] = useState([]);
 
   const length = Object.keys(sliderData).length;
@@ -28,8 +26,6 @@ export default function Gallery() {
   function handleChangeOverlay() {
     setOverlay(overlay === "overlayOff" ? "overlayOn" : "overlayOff");
   }
-
-  console.log(overlay);
 
   useEffect(() => {
     fetch("/sliderdata.json")

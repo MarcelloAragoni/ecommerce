@@ -6,21 +6,20 @@
   margin: 0 auto;
 
   #overlayOn .gallery {
-      .button.button__icon--previous {
-        z-index: 999;
-        top: 45%;        
-        left: 35%;        
-      }
+    .button.button__icon--previous {
+      z-index: 999;
+      top: 45%;        
+      left: 35%;        
+    }
     
-      .button.button__icon--next {
-        z-index: 999;
-        top: 45%;
-        left: 63%;
-      }
+    .button.button__icon--next {
+      z-index: 999;
+      top: 45%;
+      left: 63%;
+    }
   }
 
   .gallery {
-
     .button {
       position: absolute;
       border-radius: 25px;
