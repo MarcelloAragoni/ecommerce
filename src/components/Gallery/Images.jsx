@@ -3,7 +3,7 @@ export default function Images({ source, onClick }) {
 
   return (
     <img
-      className="__image"
+      className="gallery-image"
       onClick={onClick}
       src={IMAGE_PATH + source}
       alt=""

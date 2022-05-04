@@ -1,6 +1,6 @@
+import "./reset.css";
 import "./App.css";
 import ProductPage from "./pages/ProductPage";
-import "./reset.css";
 
 function App() {
   return <ProductPage />;

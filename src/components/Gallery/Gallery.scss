@@ -12,12 +12,12 @@
 	text-align: center;
   z-index: 999;
 
-  & .__image {
+  .gallery-image {
     margin-top: 5%;
     width: 500px;
   }
 
-  & .gallery-thumbnail {
+  .gallery-thumbnail {
     width: 400px;
   }
 }
