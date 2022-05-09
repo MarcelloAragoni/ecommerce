@@ -1,7 +1,7 @@
+import Images from "../../Images/Images";
+
 import "./User.scss";
 
-export default function User({ userSource }) {
-  const IMAGE_PATH = "/images/";
-
-  return <img className="user-icon" src={IMAGE_PATH + userSource} alt="" />;
+export default function User() {
+  return <Images imagetype="user" source="image-avatar.png" />;
 }
