@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Button from "../Button/Button";
-import Images from "./Images";
+import Images from "../Images/Images";
 
 import "./Gallery.scss";
 
@@ -46,7 +46,11 @@ export default function Gallery() {
               key={index}
             >
               {index === current && (
-                <Images onClick={handleChangeOverlay} source={slider.image} />
+                <Images
+                  onClick={handleChangeOverlay}
+                  source={slider.image}
+                  imagetype="gallery"
+                />
               )}
             </div>
           );
@@ -75,7 +79,11 @@ export default function Gallery() {
                 key={index}
               >
                 {index === current && (
-                  <Images onClick={handleChangeOverlay} source={slider.image} />
+                  <Images
+                    onClick={handleChangeOverlay}
+                    source={slider.image}
+                    imagetype="gallery"
+                  />
                 )}
               </div>
             );
