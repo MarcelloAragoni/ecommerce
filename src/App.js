@@ -1,12 +1,13 @@
 import "./reset.css";
 import "./App.css";
 import ProductPage from "./pages/ProductPage";
-import Logo from "./components/TopBarMenu/Logo/Logo";
+import User from "./components/TopBarMenu/User/User";
+
 
 function App() {
   return (
     <>
-      <Logo />
+      <User userSource="image-avatar.png" />
       <ProductPage />;
     </>
   );

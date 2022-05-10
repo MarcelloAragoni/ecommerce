@@ -1,6 +1,6 @@
 import cn from "classnames";
 
-export default function Images({ source, onClick, imagetype }) {
+export default function Images({ source, onClick, imagetype, alt }) {
   const IMAGE_PATH = "/images/";
   const imgtype = cn(
     "image",
@@ -14,7 +14,7 @@ export default function Images({ source, onClick, imagetype }) {
       className={imgtype}
       onClick={onClick}
       src={IMAGE_PATH + source}
-      alt=""
+      alt={alt}
     />
   );
 }

@@ -50,6 +50,7 @@ export default function Gallery() {
                   onClick={handleChangeOverlay}
                   source={slider.image}
                   imagetype="gallery"
+                  alt={slider.description}
                 />
               )}
             </div>
@@ -62,7 +63,7 @@ export default function Gallery() {
               onClick={() => handleChangeCurrent(index)}
               key={index}
             >
-              <Images source={slider.thumbnail} />
+              <Images source={slider.thumbnail} alt={slider.description} />
             </li>
           ))}
         </ul>
@@ -83,6 +84,7 @@ export default function Gallery() {
                     onClick={handleChangeOverlay}
                     source={slider.image}
                     imagetype="gallery"
+                    alt={slider.description}
                   />
                 )}
               </div>
@@ -95,7 +97,7 @@ export default function Gallery() {
                 onClick={() => handleChangeCurrent(index)}
                 key={index}
               >
-                <Images source={slider.thumbnail} />
+                <Images source={slider.thumbnail} alt={slider.description} />
               </li>
             ))}
           </ul>
