@@ -1,0 +1,16 @@
+.categories-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 350px;
+  height: 40px;
+
+  li {
+    font-weight: bold;
+
+    &:hover {
+      border-bottom: inset;
+      border-color: #EC823E;
+    }
+  }
+}

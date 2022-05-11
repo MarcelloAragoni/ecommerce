@@ -1,13 +1,12 @@
 import "./reset.css";
 import "./App.css";
 import ProductPage from "./pages/ProductPage";
-import User from "./components/TopBarMenu/User/User";
-
+import Categories from "./components/TopBarMenu/Categories/Categories";
 
 function App() {
   return (
     <>
-      <User userSource="image-avatar.png" />
+      <Categories />
       <ProductPage />;
     </>
   );
