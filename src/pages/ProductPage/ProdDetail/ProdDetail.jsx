@@ -14,7 +14,7 @@ export default function ProdDetail({
       <p className="product-detail__title">{model}</p>
       <p className="product-detail__description">{description}</p>
       <p className="product-detail__price">
-        {price}
+        ${price}
         <span>{discount}</span>
       </p>
       <p className="product-detail__original-price">{originalPrice}</p>

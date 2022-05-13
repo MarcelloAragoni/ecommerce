@@ -1,13 +1,13 @@
 import "./reset.css";
 import "./App.css";
 import ProductPage from "./pages/ProductPage";
-import Categories from "./components/TopBarMenu/Categories/Categories";
+import Cart from "./components/TopBarMenu/Cart/Cart";
 
 function App() {
   return (
     <>
-      <Categories />
-      <ProductPage />;
+      <Cart />
+      <ProductPage />
     </>
   );
 }
