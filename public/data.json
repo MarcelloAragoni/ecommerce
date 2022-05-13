@@ -1,14 +1,10 @@
 {
-  "products":[
-    {
-      "thumbnail":"image-product-1-thumbnail.jpg",  
-      "id": "1",
-      "company":"SNEAKER COMPANY",
-      "model":"Fall Limited Edition Sneakers",
-      "description":"These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.",
-      "originalprice":"$250.00",
-      "price":"125",
-      "discount":"50%"
-    } 
-  ]
-}
+"thumbnail":"image-product-1-thumbnail.jpg",  
+"id": "1",
+"company":"SNEAKER COMPANY",
+"model":"Fall Limited Edition Sneakers",
+"description":"These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.",
+"originalprice":"$250.00",
+"price":"125",
+"discount":"50%"
+} 

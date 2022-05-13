@@ -1,25 +1,10 @@
 import { useState } from "react";
-import React from "react";
 import Input from "../Input/Input";
 import Button from "../Button/Button";
 
 import "./Quantity.scss";
 
-export const AuthContext = React.createContext({});
-
-export const AuthPorvider = (props) => {
-  const cart = {
-    quantity: 1,
-  };
-
-  return (
-    <AuthContext.Provider value={{ cart }}>
-      {props.children}
-    </AuthContext.Provider>
-  );
-};
-
-export default function Quantity() {
+export default function Quantity({ addItemCart }) {
   const [inputState, setInputState] = useState(0);
 
   function handleButtonPlusClick() {
@@ -49,7 +34,12 @@ export default function Quantity() {
         />
         <Button onClick={handleButtonPlusClick} icon="plus" />
       </div>
-      <Button color="orange" icon="add" text="Add to Cart" />
+      <Button
+        onClick={() => addItemCart(inputState)}
+        color="orange"
+        icon="add"
+        text="Add to Cart"
+      />
     </>
   );
 }
