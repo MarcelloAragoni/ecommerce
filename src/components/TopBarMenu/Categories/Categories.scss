@@ -1,0 +1,21 @@
+.categories-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 350px;
+  height: 40px;
+
+  &__item {
+    font-weight: bold;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    &:hover {
+      border-bottom: inset;
+      border-color: #EC823E;
+    }
+  }
+}
