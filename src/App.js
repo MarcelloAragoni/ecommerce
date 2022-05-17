@@ -8,11 +8,10 @@ import CartContext, {
 } from "../src/components/TopBarMenu/Cart/CartContext.js";
 
 function App() {
-  const [cart, setCart] = useState(cartDefaultValue); // Cart state will live in here
+  const [cart, setCart] = useState(cartDefaultValue);
 
   return (
     <CartContext.Provider value={{ cart, setCart }}>
-      {/* in here we're passing the value and the way to update it to be consumed later on. */}
       <Cart />
       <ProductPage />
     </CartContext.Provider>
