@@ -13,15 +13,13 @@ export default function ProductPage() {
   useEffect(() => {
     fetch("/data.json")
       .then((response) => response.json())
-      .then((data) => {
-        setProduct(data);
-        console.log(data);
+      .then((productData) => {
+        setProduct(productData);
       });
   }, []);
 
   function addItemCart(cartQuantity) {
     setCart({ product, quantity: cart.quantity + cartQuantity });
-    console.log(product, cartQuantity);
   }
 
   return (
