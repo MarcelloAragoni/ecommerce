@@ -6,7 +6,8 @@ export default function Images({ source, onClick, imagetype, alt }) {
     "image",
     { "user-image": imagetype === "user" },
     { "gallery-image": imagetype === "gallery" },
-    { "logo-image": imagetype === "logo" }
+    { "logo-image": imagetype === "logo" },
+    { "cart-image": imagetype === "cart" }
   );
 
   return (

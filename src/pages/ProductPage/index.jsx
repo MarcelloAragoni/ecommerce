@@ -19,7 +19,7 @@ export default function ProductPage() {
   }, []);
 
   function addItemCart(cartQuantity) {
-    setCart({ product, quantity: cart.quantity + cartQuantity });
+    setCart({ product, quantity: cart.quantity + cartQuantity, value: "true" });
   }
 
   return (
