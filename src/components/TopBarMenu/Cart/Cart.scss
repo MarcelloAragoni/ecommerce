@@ -3,12 +3,15 @@
   filter: brightness(.3);
 }
 
-#cartboxOff {
+[data-status="off"] {
   display: none;
 }
 
-#cartboxOn {
+[data-status="on"] {
   display: flex;
+}
+
+.cartbox {
   flex-direction: column;
   position: absolute;
   background-color: white;

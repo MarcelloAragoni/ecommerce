@@ -7,10 +7,10 @@ import "./Cart.scss";
 
 export default function Cart() {
   const { cart, setCart } = useContext(CartContext);
-  const [cartBox, setCartBox] = useState("cartboxOff");
+  const [cartBox, setCartBox] = useState("off");
 
   function handleChangeCartbox() {
-    setCartBox(cartBox === "cartboxOff" ? "cartboxOn" : "cartboxOff");
+    setCartBox(cartBox === "off" ? "on" : "off");
   }
 
   function removeItemCart(cartQuantity) {
@@ -25,7 +25,7 @@ export default function Cart() {
         imagetype="cart"
         alt="cart icon"
       />
-      <div id={cartBox}>
+      <div className="cartbox" data-status={cartBox}>
         <h1>Cart</h1>
         <div id={cart.value} className="cart-product">
           <img
