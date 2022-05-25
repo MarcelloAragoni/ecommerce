@@ -14,7 +14,7 @@ export default function Cart() {
   }
 
   function removeItemCart(cartQuantity) {
-    setCart({ product: null, quantity: 0, value: "false" });
+    setCart({ product: null, quantity: 0 });
   }
 
   return (
@@ -26,24 +26,27 @@ export default function Cart() {
         alt="cart icon"
       />
       <div className="cartbox" data-status={cartBox}>
-        <h1>Cart</h1>
-        <div id={cart.value} className="cart-product">
-          <img
-            src={`/images/${cart.product?.thumbnail}`}
-            alt="product thumbnail"
-            className="cart-thumbnail"
-          />
-          <p className="cart-product__details">
-            <span>{cart.product?.model}</span>
-            <span>
-              {cart.product?.price} x {cart.quantity} $
-              <span className="total">
-                {cart.product?.price * cart.quantity}
+        <h1 className="title">Cart</h1>
+        {!cart.product && <span className="cartempty">Cart empty</span>}
+        {cart.product && (
+          <div className="cart__product">
+            <img
+              src={`/images/${cart.product?.thumbnail}`}
+              alt="product thumbnail"
+              className="cart-thumbnail"
+            />
+            <p className="cart-product__details">
+              <span>{cart.product?.model}</span>
+              <span>
+                {cart.product?.price} x {cart.quantity} $
+                <span className="total">
+                  {cart.product?.price * cart.quantity}
+                </span>
               </span>
-            </span>
-          </p>
-          <Button icon="delete" onClick={removeItemCart} />
-        </div>
+            </p>
+            <Button icon="delete" onClick={removeItemCart} />
+          </div>
+        )}
         <Button color="orange" text="Checkout" />
       </div>
     </>
