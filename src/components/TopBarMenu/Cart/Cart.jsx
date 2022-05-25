@@ -18,7 +18,7 @@ export default function Cart() {
   }
 
   return (
-    <>
+    <div className="cart">
       <Images
         onClick={handleChangeCartbox}
         source="icon-cart.svg"
@@ -49,6 +49,6 @@ export default function Cart() {
         )}
         <Button color="orange" text="Checkout" />
       </div>
-    </>
+    </div>
   );
 }
