@@ -1,67 +1,73 @@
-.cart-image {
-  width: 35px;
-  filter: brightness(.3);
-}
+.cart {
+  position: relative;
 
-[data-status="off"] {
-  display: none;
-}
-
-[data-status="on"] {
-  display: flex;
-}
-
-.cartbox {
-  flex-direction: column;
-  position: absolute;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 0 1em black;
-  height: fit-content;
-  padding: 10px;
-  z-index: 999;
-  min-width: 250px;
-
-  .title {
-    font-size: 16px;
-    font-weight: bold;
-    padding-bottom: 15px;
-    margin-bottom:  20px;
-    border-bottom: 1px solid gray;
+  .cart-image {
+    width: 25px;
+    filter: brightness(.3);
+    place-self: center;
   }
 
-  .cartempty{
-    align-self: center;
-    padding-bottom: 20px;
-    font-weight: bold;
-    color: #808080ab;
+  [data-status="off"] {
+    display: none;
   }
 
-  .cart__product {
-    padding-bottom: 20px;
-    display: grid;
-    grid-template-columns: 4em 2fr .5fr;
-    grid-template-rows: auto;
+  [data-status="on"] {
+    display: flex;
+  }
 
-    .cart-thumbnail{
-      width: 60px;
+  .cartbox {
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 1em black;
+    height: fit-content;
+    padding: 10px;
+    z-index: 999;
+    min-width: 350px;
+    top: 40px;
+
+    .title {
+      font-size: 16px;
+      font-weight: bold;
+      padding-bottom: 15px;
+      margin-bottom:  20px;
+      border-bottom: 1px solid gray;
     }
 
-    .cart-product__details {
-      color: gray;
-      display: flex;
-      flex-direction: column;
+    .cartempty{
+      align-self: center;
+      padding-bottom: 20px;
+      font-weight: bold;
+      color: #808080ab;
+    }
 
-      .total {
-        color: black;
-        font-weight: bold;
+    .cart__product {
+      padding-bottom: 20px;
+      display: grid;
+      grid-template-columns: 4em 2fr .5fr;
+      grid-template-rows: auto;
+
+      .cart-thumbnail{
+        width: 60px;
+      }
+
+      .cart-product__details {
+        color: gray;
+        display: flex;
+        flex-direction: column;
+
+        .total {
+          color: black;
+          font-weight: bold;
+        }
       }
     }
-  }
 
-  .button--orange {
-    width: 80%;
-    align-self: center;
-  }
+    .button--orange {
+      width: 80%;
+      align-self: center;
+    }
 
+  }
 }

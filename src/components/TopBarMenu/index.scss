@@ -1,0 +1,10 @@
+.pagenavbar {
+  display: grid;
+  grid-template-columns: 10em 1fr 3em 3em;
+  grid-gap: 15px;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 35px;
+  border-bottom: #80808091 2px solid;
+}
