@@ -1,20 +1,26 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import ProdDetail from "./ProdDetail/ProdDetail";
 import ProdSelector from "./ProdSelector/ProdSelector";
 import Gallery from "../../components/Gallery/Gallery";
+import CartContext from "../../components/TopBarMenu/Cart/CartContext.js";
 
 import "./index.scss";
 
 export default function ProductPage() {
-  const [products, setProduct] = useState([]);
+  const [product, setProduct] = useState(undefined);
+  const { cart, setCart } = useContext(CartContext);
 
   useEffect(() => {
     fetch("/data.json")
       .then((response) => response.json())
-      .then((data) => {
-        setProduct(data.products);
+      .then((productData) => {
+        setProduct(productData);
       });
   }, []);
+
+  function addItemCart(cartQuantity) {
+    setCart({ product, quantity: cart.quantity + cartQuantity });
+  }
 
   return (
     <div className="product-page">
@@ -22,7 +28,7 @@ export default function ProductPage() {
         <Gallery />
       </div>
       <div className="product-info">
-        {products.map((product) => (
+        {product && (
           <ProdDetail
             key={product.id}
             company={product.company}
@@ -32,8 +38,8 @@ export default function ProductPage() {
             originalPrice={product.originalprice}
             discount={product.discount}
           />
-        ))}
-        <ProdSelector />
+        )}
+        <ProdSelector addItemCart={addItemCart} />
       </div>
     </div>
   );

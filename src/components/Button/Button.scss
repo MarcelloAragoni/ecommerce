@@ -8,6 +8,7 @@
   background-position: center;
   color: #EC823E;
   background-color: #F7F8FD;
+  cursor:pointer;
 
   &--orange{
     padding: 0;
@@ -39,6 +40,10 @@
 
     &--next{
       background-image: url('../../../public/images/icon-next.svg');
+    }
+
+    &--delete{
+      background-image: url('../../../public/images/icon-delete.svg');
     }
   }
 }

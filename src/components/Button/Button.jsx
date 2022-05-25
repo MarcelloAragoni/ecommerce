@@ -10,6 +10,7 @@ export default function Button({ text, icon, color, onClick }) {
     { "button__icon--add": icon === "add" },
     { "button__icon--next": icon === "next" },
     { "button__icon--previous": icon === "previous" },
+    { "button__icon--delete": icon === "delete" },
     { "button--orange": color === "orange" }
   );
 
